@@ -122,7 +122,7 @@ echo_LDADD = $(LDADD)
 echo_DEPENDENCIES = $(LIBFCGI)
 am_echo_cpp_OBJECTS = $(am__objects_1) echo-cpp.$(OBJEXT)
 echo_cpp_OBJECTS = $(am_echo_cpp_OBJECTS)
-echo_cpp_DEPENDENCIES = $(LIBDIR)/libfcgi++.la
+echo_cpp_DEPENDENCIES = $(LIBDIR)/libfcgi++.la $(LIBDIR)/libfcgi.la
 am_echo_x_OBJECTS = $(am__objects_1) echo-x.$(OBJEXT)
 echo_x_OBJECTS = $(am_echo_x_OBJECTS)
 echo_x_LDADD = $(LDADD)
@@ -372,7 +372,7 @@ threaded_CC = @PTHREAD_CC@
 threaded_CFLAGS = @PTHREAD_CFLAGS@
 threaded_LDFLAGS = @PTHREAD_CFLAGS@ @PTHREAD_LIBS@
 echo_cpp_SOURCES = $(INCLUDE_FILES) $(INCLUDEDIR)/fcgio.h echo-cpp.cpp
-echo_cpp_LDADD = $(LIBDIR)/libfcgi++.la
+echo_cpp_LDADD = $(LIBDIR)/libfcgi++.la $(LIBDIR)/libfcgi.la
 all: all-am
 
 .SUFFIXES:
