@@ -61,6 +61,25 @@ extern int pclose(FILE *stream);
 
 FCGI_FILE _fcgi_sF[3];
 
+/*
+ *----------------------------------------------------------------------
+ *
+ * FCGI_Init --
+ *
+ *      Initializes the streams for initialization section of the caller
+ *      (that is before calling FCGI_Accept).
+ *
+ *----------------------------------------------------------------------
+ */
+void FCGI_Init(void)
+{
+    FCGI_stdin->stdio_stream = stdin;
+    FCGI_stdin->fcgx_stream = NULL;
+    FCGI_stdout->stdio_stream = stdout;
+    FCGI_stdout->fcgx_stream = NULL;
+    FCGI_stderr->stdio_stream = stderr;
+    FCGI_stderr->fcgx_stream = NULL;
+}
 
 /*
  *----------------------------------------------------------------------

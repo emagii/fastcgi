@@ -40,6 +40,8 @@ typedef struct {
     FCGX_Stream *fcgx_stream;
 } FCGI_FILE;
 
+DLLAPI void FCGI_Init(void);
+
 /*
  * The four new functions and two new macros
  */
