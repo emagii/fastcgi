@@ -85,7 +85,8 @@
 /* Define if va_arg(arg, long double) crashes the compiler */
 /* #undef HAVE_VA_ARG_LONG_DOUBLE_BUG */
 
-/* Define to the sub-directory where libtool stores uninstalled libraries. */
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
 #define LT_OBJDIR ".libs/"
 
 /* Name of package */
