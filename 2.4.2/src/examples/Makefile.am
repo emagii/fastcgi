@@ -1,5 +1,7 @@
 # $Id: Makefile.am,v 1.8 2001/12/22 03:16:21 robs Exp $
 
+ACLOCAL_AMFLAGS         = ${ACLOCAL_FLAGS} '-Im4'
+
 noinst_PROGRAMS     = authorizer        \
                       echo              \
                       echo-x            \

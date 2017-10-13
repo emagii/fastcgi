@@ -6,7 +6,9 @@
 
 SUBDIRS = libfcgi cgi-fcgi examples include
 
-ACLOCAL_AMFLAGS = '-Im4'
+ACLOCAL_AMFLAGS = -I m4
+
+AC_CONFIG_MACRO_DIR([m4])
 
 include_HEADERS = fcgi_config.h
 
