@@ -72,7 +72,9 @@ AC_PROG_CC_WARNINGS
 AC_CONFIG_FILES([Makefile
                  include/Makefile
                  libfcgi/Makefile
+		 libfcgi/libfcgi.pc
                  examples/Makefile
 		 cgi-fcgi/Makefile])
+
 
 AC_OUTPUT

@@ -14,6 +14,9 @@ INCLUDE_FILES = $(INCLUDEDIR)/fastcgi.h     \
 lib_LTLIBRARIES   = libfcgi.la @LIBFCGIXX@
 EXTRA_LTLIBRARIES = libfcgi++.la
 
+pkgconfigdir            = $(libdir)/pkgconfig
+pkgconfig_DATA          = libfcgi.pc
+
 libfcgi_la_SOURCES = $(INCLUDE_FILES)  \
                      fcgiapp.c         \
                      fcgi_stdio.c      \
