@@ -1,0 +1,7 @@
+#!/bin/sh
+PREFIX=/usr/local/libfcgi
+sudo	rm	-fr	${PREFIX}
+sudo	mkdir	-p	${PREFIX}
+sudo	chown	$USER:$USER	${PREFIX}
+./configure	\
+	--prefix=${PREFIX}
