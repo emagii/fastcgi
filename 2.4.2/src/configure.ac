@@ -4,7 +4,8 @@ dnl     This file is an input file used by the GNU "autoconf" program to
 dnl     generate the file "configure", which is run during the build
 dnl     to configure the system for the local environment.
 
-AC_INIT([fcgi], [2.4.2])
+AC_INIT([fcgi], [2.4.2], [], [libfcgi-2.4.2], [http://www.fastcgi.com/])
+AC_SUBST(LIBFCGI_VERSION, 2.4.2)
 AC_CONFIG_SRCDIR
 AM_INIT_AUTOMAKE
 
@@ -68,6 +69,9 @@ SYSTEM=unix
 AC_SUBST([SYSTEM])
 
 AC_PROG_CC_WARNINGS
+
+LIBFCGI_LIBS		= $(LIBS)
+AC_SUBST(LIBFCGI_LIBS)
 
 AC_CONFIG_FILES([Makefile
                  include/Makefile
