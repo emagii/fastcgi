@@ -90,7 +90,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Name of package */
-#define PACKAGE "fcgi"
+#define PACKAGE "libfcgi-2.4.2"
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT ""
@@ -102,10 +102,10 @@
 #define PACKAGE_STRING "fcgi 2.4.2"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "fcgi"
+#define PACKAGE_TARNAME "libfcgi-2.4.2"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL ""
+#define PACKAGE_URL "http://www.fastcgi.com/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "2.4.2"
